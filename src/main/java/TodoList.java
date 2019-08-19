@@ -3,17 +3,24 @@ import java.util.List;
 
 public class TodoList {
 
-    private List<String> todos;
+    private List<Task> todos;
 
     public TodoList () {
         todos = new LinkedList<>();
     }
 
     public void action(String move) {
+        String[] moveSplit = move.split(" ");
         if (move.equals("list")) {
             printList();
+        } else if (moveSplit[0].equals("done")) {
+            Task current = todos.get(Integer.parseInt(moveSplit[1])-1);
+            current.markAsDone();
+            System.out.println("Nice! I've marked this task as done: \n" + current);
+
+
         } else {
-            todos.add(move);
+            todos.add(new Task(move));
             System.out.println("added: " + move);
         }
     }
