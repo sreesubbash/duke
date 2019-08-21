@@ -20,6 +20,8 @@ public class TodoList {
                 printList();
             } else if (type.equals("done")) {
                 completeTask(args);
+            } else if (type.equals("delete")) {
+                deleteTask(args);
             } else {
                 addTask(type, remainingArgs);
             }
@@ -67,6 +69,18 @@ public class TodoList {
             Task current = todos.get(taskNo);
             current.markAsDone();
             System.out.println("Nice! I've marked this task as done: \n" + current);
+        } catch (IndexOutOfBoundsException e) {
+            throw new DukeException("Please give correct task number");
+        }
+    }
+
+    private void deleteTask(List<String> args) throws DukeException {
+        try {
+            int taskNo = Integer.parseInt(args.get(0)) - 1;
+            Task current = todos.get(taskNo);
+            todos.remove(current);
+            System.out.println("Nice! I've marked this task as done: \n" + current
+                    + "\nNow you have " + todos.size() + " tasks in the list.");
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException("Please give correct task number");
         }
