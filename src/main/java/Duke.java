@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Duke {
@@ -12,7 +14,11 @@ public class Duke {
                 + "|____/ \\__,_|_|\\_\\___|\n";
         System.out.println(logo);
         System.out.println("Hello! I'm Duke \nWhat can I do for you?");
-        Duke.serve(new TodoList());
+        try {
+            Duke.serve(Saver.load());
+        } catch (IOException | ClassNotFoundException ce) {
+            Duke.serve(new TodoList());
+        }
     }
 
     private static void serve(TodoList todoList) {
@@ -24,6 +30,11 @@ public class Duke {
                 break;
             }
             todoList.action(move);
+            try {
+                Saver.save(todoList);
+            } catch (IOException e) {
+                System.out.println(e);
+            }
         }
     }
 }
