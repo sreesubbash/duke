@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.Serializable;
+import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -29,6 +30,8 @@ public class TodoList implements Serializable{
             }
         } catch (DukeException de) {
             System.out.println(de.getMessage());
+        } catch (DateTimeParseException dtpe) {
+            System.out.println(dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting" );
         }
     }
 
@@ -81,7 +84,7 @@ public class TodoList implements Serializable{
             int taskNo = Integer.parseInt(args.get(0)) - 1;
             Task current = todos.get(taskNo);
             todos.remove(current);
-            System.out.println("Nice! I've marked this task as done: \n" + current
+            System.out.println("Noted. I've removed this task: \n" + current
                     + "\nNow you have " + todos.size() + " tasks in the list.");
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException("Please give correct task number");
