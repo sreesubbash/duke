@@ -1,9 +1,11 @@
+import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TodoList {
-
+public class TodoList implements Serializable{
+    private static final long serialVersionUID = 1L;
     private List<Task> todos;
 
     public TodoList() {
