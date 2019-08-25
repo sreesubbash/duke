@@ -7,7 +7,7 @@ public class Deadline extends Task {
 
     public Deadline(String description, String by) {
         super(description);
-        this.by = parseInput(by);
+        this.by = Parser.parseInput(by);
     }
 
     @Override
@@ -16,10 +16,4 @@ public class Deadline extends Task {
         return "[D]" + super.toString() + " (by: " + by.format(formatter) + ")";
     }
 
-    private LocalDateTime parseInput(String by) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy HHmm");
-        LocalDateTime temp = LocalDateTime.parse(by, formatter);
-        System.out.println(temp);
-        return temp;
-    }
 }
