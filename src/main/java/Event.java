@@ -7,18 +7,14 @@ public class Event extends Task {
 
     public Event(String description, String at) {
         super(description);
-        this.at = parseInput(at);
+        this.at = Parser.parseInput(at);
     }
 
     @Override
     public String toString() {
-        return "[E]" + super.toString() + " (at: " + at + ")";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d 'of' MMM yyyy h:mm a");
+        return "[D]" + super.toString() + " (at: " + at.format(formatter) + ")";
     }
 
-    private LocalDateTime parseInput(String at) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy HHmm");
-        LocalDateTime temp = LocalDateTime.parse(at, formatter);
-        System.out.println(temp);
-        return temp;
-    }
+
 }
