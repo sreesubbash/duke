@@ -5,6 +5,13 @@ public class Deadline extends Task {
 
     protected LocalDateTime by;
 
+
+    /**
+     * Constructor for deadline
+     *
+     * @param description  description of deadline
+     * @param by string indicating date and time
+     */
     public Deadline(String description, String by) {
         super(description);
         this.by = Parser.parseInput(by);

@@ -12,6 +12,11 @@ public class Parser {
     String remainingArgs;
     List<String> argsWithDate;
 
+    /**
+     * Constructor for Parser
+     *
+     * @param move string that user types in
+     */
     public Parser(String move) {
         raw = move;
         args = new LinkedList<>(Arrays.asList(move.split(" ")));
@@ -20,6 +25,11 @@ public class Parser {
         remainingArgs = String.join(" ", args);
     }
 
+    /**
+     * Getter for type of action
+     *
+     * @return type of action
+     */
     public String getType() {
         if (args.size() == 0) {
             return raw;
@@ -28,6 +38,12 @@ public class Parser {
         }
     }
 
+    /**
+     * Getter for Task Number from action
+     *
+     * @return Task Number
+     * @throws DukeException if task number incorrect
+     */
     public int getTaskNo() throws DukeException {
         try {
             int taskNo = Integer.parseInt(args.get(0)) - 1;
@@ -37,6 +53,13 @@ public class Parser {
         }
     }
 
+
+    /**
+     * Getter for Task Name from action
+     *
+     * @return Task Name
+     * @throws DukeException if task name missing
+     */
     public String getTaskName() throws DukeException {
         try {
             String name = args.get(0);
@@ -46,6 +69,11 @@ public class Parser {
         }
     }
 
+    /**
+     * Getter for description without type
+     *
+     * @return description
+     */
     public String getDescription() {
         return remainingArgs;
     }
@@ -53,10 +81,16 @@ public class Parser {
     private void parseArgsWithDate(String delimitter) throws DukeException {
         argsWithDate = new LinkedList<>(Arrays.asList(remainingArgs.split(delimitter)));
         if (argsWithDate.size() != 2) {
-            throw new DukeException("☹ OOPS!!! Set deadline after" + delimitter);
+            throw new DukeException("☹ OOPS!!! Set date after" + delimitter);
         }
     }
 
+    /**
+     * Getter Deadline Description
+     *
+     * @return Deadline description
+     * @throws DukeException if no date provided
+     */
     public String getDeadlineDescription() throws DukeException {
         if (argsWithDate == null) {
             this.parseArgsWithDate(" /by ");
@@ -64,6 +98,12 @@ public class Parser {
         return argsWithDate.get(0);
     }
 
+    /**
+     * Getter Deadline Date
+     *
+     * @return Deadline date
+     * @throws DukeException if no date provided
+     */
     public String getDeadlineDate() throws DukeException {
         if (argsWithDate == null) {
             this.parseArgsWithDate(" /by ");
@@ -71,6 +111,12 @@ public class Parser {
         return argsWithDate.get(1);
     }
 
+    /**
+     * Getter Event Description
+     *
+     * @return Event description
+     * @throws DukeException if no date provided
+     */
     public String getEventDescription() throws DukeException {
         if (argsWithDate == null) {
             this.parseArgsWithDate(" /at ");
@@ -78,6 +124,12 @@ public class Parser {
         return argsWithDate.get(0);
     }
 
+    /**
+     * Getter Event Date
+     *
+     * @return Event date
+     * @throws DukeException if no date provided
+     */
     public String getEventDate() throws DukeException {
         if (argsWithDate == null) {
             this.parseArgsWithDate(" /at ");
@@ -85,6 +137,11 @@ public class Parser {
         return argsWithDate.get(1);
     }
 
+    /**
+     * Parses string date time to LocalDateTime object
+     *
+     * @return LocalDateTime object
+     */
     public static LocalDateTime parseInput(String at) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy HHmm");
         LocalDateTime temp = LocalDateTime.parse(at, formatter);

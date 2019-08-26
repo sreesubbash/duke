@@ -13,6 +13,12 @@ public class TaskList implements Serializable{
         todos = new LinkedList<>();
     }
 
+    /**
+     * Carries out action on TaskList using move
+     *
+     * @param move is passed by user thru UI
+     * @return true if move was successful else false
+     */
     public boolean action(String move) {
         Parser current = new Parser(move);
         try {
