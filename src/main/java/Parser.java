@@ -56,9 +56,10 @@ public class Parser {
 
 
     /**
-     * Getter for description without type
+     * Getter for Task Name from action
      *
-     * @return description
+     * @return Task Name
+     * @throws DukeException if task name missing
      */
     public String getTaskName() throws DukeException {
         try {
@@ -69,6 +70,11 @@ public class Parser {
         }
     }
 
+    /**
+     * Getter for description without type
+     *
+     * @return description
+     */
     public String getDescription() {
         return remainingArgs;
     }
