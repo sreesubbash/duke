@@ -79,7 +79,7 @@ public class Parser {
     public static LocalDateTime parseInput(String at) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy HHmm");
         LocalDateTime temp = LocalDateTime.parse(at, formatter);
-        System.out.println(temp);
+        //System.out.println(temp);
         return temp;
     }
 

@@ -13,7 +13,7 @@ public class TaskList implements Serializable{
         todos = new LinkedList<>();
     }
 
-    public void action(String move) {
+    public boolean action(String move) {
         Parser current = new Parser(move);
         try {
             if (current.getType().equals("list")) {
@@ -25,10 +25,13 @@ public class TaskList implements Serializable{
             } else {
                 addTask(current);
             }
+            return true;
         } catch (DukeException de) {
             Ui.printError(de);
+            return false;
         } catch (DateTimeParseException dtpe) {
             System.out.println(dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting" );
+            return false;
         }
     }
 
