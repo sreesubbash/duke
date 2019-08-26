@@ -18,6 +18,8 @@ public class TaskList implements Serializable{
         try {
             if (current.getType().equals("list")) {
                 Ui.printList(todos);
+            } else if (current.getType().equals("find")) {
+                Ui.findTasks(todos, current.getTaskName());
             } else if (current.getType().equals("done")) {
                 completeTask(current.getTaskNo());
             } else if (current.getType().equals("delete")) {
