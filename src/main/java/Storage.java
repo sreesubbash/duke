@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Storage {
-    
+
 
     public static void save(TaskList toSave) throws IOException {
         FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir") + "/src/main/java/notes.ser");
