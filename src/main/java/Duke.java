@@ -6,6 +6,9 @@ public class Duke {
 
     private static TaskList TaskList;
 
+    /**
+     * Duke begins at this main method
+     */
     public static void main(String[] args) {
         Ui.greet();
         try {
