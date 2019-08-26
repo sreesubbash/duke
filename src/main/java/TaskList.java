@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TaskList implements Serializable{
+public class TaskList implements Serializable {
     private static final long serialVersionUID = 1L;
     private List<Task> todos;
 
@@ -38,7 +38,7 @@ public class TaskList implements Serializable{
             Ui.printError(de);
             return false;
         } catch (DateTimeParseException dtpe) {
-            System.out.println(dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting" );
+            System.out.println(dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting");
             return false;
         }
     }
