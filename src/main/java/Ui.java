@@ -79,4 +79,14 @@ public class Ui {
             System.out.println((i + 1) + ". " + todos.get(i));
         }
     }
+
+    public static void findTasks(List<Task> todos, String name) {
+        System.out.println("Here are the matching tasks in your list:");
+        for (int i = 0; i < todos.size(); i++) {
+            Task curr = todos.get(i);
+            if (curr.getDescription().contains(name)) {
+                System.out.println((i + 1) + ". " + curr);
+            }
+        }
+    }
 }

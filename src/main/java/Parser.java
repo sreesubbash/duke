@@ -53,11 +53,21 @@ public class Parser {
         }
     }
 
+
     /**
      * Getter for description without type
      *
      * @return description
      */
+    public String getTaskName() throws DukeException {
+        try {
+            String name = args.get(0);
+            return name;
+        } catch (IndexOutOfBoundsException e) {
+            throw new DukeException("Please give a task name");
+        }
+    }
+
     public String getDescription() {
         return remainingArgs;
     }
