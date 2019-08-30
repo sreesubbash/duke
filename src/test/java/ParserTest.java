@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class DukeTest {
+public class ParserTest {
 
     @Test
     public void parserGetDate() {
@@ -26,9 +26,4 @@ public class DukeTest {
         assertEquals("19 of Dec 2019 3:00 PM", dateTime.format(formatter));
     }
 
-    @Test
-    public void deleteWrongTask() {
-        TaskList taskList = new TaskList();
-        assertEquals(false, taskList.action("delete 1"));
-    }
 }
