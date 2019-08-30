@@ -14,7 +14,7 @@ public class TaskList implements Serializable {
     }
 
     /**
-     * Carries out action on TaskList using move
+     * Carries out action on TaskList using move.
      *
      * @param move is passed by user thru UI
      * @return true if move was successful else false

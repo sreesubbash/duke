@@ -6,7 +6,7 @@ public class Task implements Serializable {
     protected boolean isDone;
 
     /**
-     * Constructor of task
+     * Constructor of Task.
      *
      * @param description is the task description
      */
@@ -20,12 +20,17 @@ public class Task implements Serializable {
     }
 
     /**
-     * Marks task as completed
+     * Marks task as completed.
      */
     public void markAsDone() {
         this.isDone = true;
     }
 
+    /**
+     * Gets description of Task.
+     *
+     * @return description of task
+     */
     public String getDescription() {
         return description;
     }

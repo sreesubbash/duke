@@ -1,7 +1,7 @@
 public class ToDo extends Task {
 
     /**
-     * Constructor for todo
+     * Constructor for ToDo.
      *
      * @param description  description of todo
      */

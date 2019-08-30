@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ui {
 
     /**
-     * Greets user
+     * Greets user.
      */
     public static void greet() {
         String logo = " ____        _        \n"
@@ -18,7 +18,7 @@ public class Ui {
     }
 
     /**
-     * Serves user while waiting for input
+     * Serves user while waiting for input.
      *
      * @param taskList on which user can have his actions on
      */
@@ -40,7 +40,7 @@ public class Ui {
     }
 
     /**
-     * Prints errors raised due to wrong input
+     * Prints errors raised due to wrong input.
      *
      * @param de DukeException to be printed
      */
@@ -49,7 +49,7 @@ public class Ui {
     }
 
     /**
-     * Prints task which was completed
+     * Prints task which was completed.
      *
      * @param t task which was completed
      */
@@ -58,7 +58,7 @@ public class Ui {
     }
 
     /**
-     * Prints task which was deleted
+     * Prints task which was deleted.
      *
      * @param t task which was deleted
      * @param todos remaining list used to calculate tasks left
@@ -69,7 +69,7 @@ public class Ui {
     }
 
     /**
-     * Prints entire list of tasks
+     * Prints entire list of tasks.
      *
      * @param todos list with all the tasks
      */
@@ -80,6 +80,12 @@ public class Ui {
         }
     }
 
+    /**
+     * Finds tasks with same name.
+     *
+     * @param todos list with all the tasks
+     * @param name being queried
+     */
     public static void findTasks(List<Task> todos, String name) {
         System.out.println("Here are the matching tasks in your list:");
         for (int i = 0; i < todos.size(); i++) {

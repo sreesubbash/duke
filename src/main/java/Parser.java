@@ -13,7 +13,7 @@ public class Parser {
     List<String> argsWithDate;
 
     /**
-     * Constructor for Parser
+     * Constructor for Parser.
      *
      * @param move string that user types in
      */
@@ -26,7 +26,7 @@ public class Parser {
     }
 
     /**
-     * Getter for type of action
+     * Gets for type of action.
      *
      * @return type of action
      */
@@ -39,7 +39,7 @@ public class Parser {
     }
 
     /**
-     * Getter for Task Number from action
+     * Gets for Task Number from action.
      *
      * @return Task Number
      * @throws DukeException if task number incorrect
@@ -56,7 +56,7 @@ public class Parser {
 
 
     /**
-     * Getter for Task Name from action
+     * Gets for Task Name from action.
      *
      * @return Task Name
      * @throws DukeException if task name missing
@@ -71,7 +71,7 @@ public class Parser {
     }
 
     /**
-     * Getter for description without type
+     * Gets for description without type.
      *
      * @return description
      */
@@ -87,7 +87,7 @@ public class Parser {
     }
 
     /**
-     * Getter Deadline Description
+     * Gets deadline description.
      *
      * @return Deadline description
      * @throws DukeException if no date provided
@@ -100,7 +100,7 @@ public class Parser {
     }
 
     /**
-     * Getter Deadline Date
+     * Gets deadline date.
      *
      * @return Deadline date
      * @throws DukeException if no date provided
@@ -113,7 +113,7 @@ public class Parser {
     }
 
     /**
-     * Getter Event Description
+     * Gets event description.
      *
      * @return Event description
      * @throws DukeException if no date provided
@@ -126,7 +126,7 @@ public class Parser {
     }
 
     /**
-     * Getter Event Date
+     * Gets event date.
      *
      * @return Event date
      * @throws DukeException if no date provided
@@ -139,7 +139,7 @@ public class Parser {
     }
 
     /**
-     * Parses string date time to LocalDateTime object
+     * Parses string date time to LocalDateTime object.
      *
      * @return LocalDateTime object
      */

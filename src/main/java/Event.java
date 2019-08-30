@@ -6,7 +6,7 @@ public class Event extends Task {
     protected LocalDateTime at;
 
     /**
-     * Constructor for event
+     * Constructor for event.
      *
      * @param description  description of event
      * @param at string indicating date and time
