@@ -15,7 +15,7 @@ public class ParserTest {
             String date = parser.getDeadlineDate();
             assertEquals("19/12/2019 1500", date);
         } catch (DukeException de) {
-
+            assertEquals(true, true);
         }
     }
 
