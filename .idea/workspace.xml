@@ -2,22 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e863b90e-2e75-4e7c-a037-4fe8ab7aa162" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/duke.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/duke_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/duke_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="distribution" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="duke" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2129498854">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,11 +100,21 @@
           <entry key="JAVA" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="11" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Duke.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -43,10 +123,360 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\vostr\.gradle\wrapper\dists\gradle-5.5.1-bin\cfsov38hb3r1zj4ic9bbjcc7n\gradle-5.5.1" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="5.5.1" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="duke" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="duke" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'duke'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'duke'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a JVM application" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="run" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="startScripts" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'duke'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the project as a distribution as-is." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the main distributions" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareKotlinBuildScriptModel" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distTar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distZip" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'duke'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6268895454858" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3103337771" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1052571473" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1525992119" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="duke" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/ant-1.9.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/ant-launcher-1.9.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-api-metadata-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-base-services-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-base-services-groovy-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-build-cache-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-build-cache-packaging-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-build-option-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-cli-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-core-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-core-api-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-docs-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-execution-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-files-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-installation-beacon-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-instant-execution-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-jvm-services-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-kotlin-dsl-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-kotlin-dsl-tooling-models-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-launcher-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-logging-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-messaging-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-model-core-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-model-groovy-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-persistent-cache-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-process-services-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-resources-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-runtime-api-info-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-snapshots-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-tooling-api-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/gradle-wrapper-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-announce-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-antlr-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-build-cache-http-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-build-comparison-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-build-init-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-build-profile-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-code-quality-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-composite-builds-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-dependency-management-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-diagnostics-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-ear-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-ide-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-ide-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-ide-play-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-ivy-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-jacoco-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-javascript-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-kotlin-dsl-provider-plugins-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-kotlin-dsl-tooling-builders-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-language-groovy-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-language-java-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-language-jvm-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-language-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-language-scala-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-maven-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-osgi-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-platform-base-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-platform-jvm-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-platform-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-platform-play-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-plugin-development-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-plugin-use-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-plugins-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-publish-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-reporting-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-resources-gcs-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-resources-http-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-resources-s3-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-resources-sftp-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-scala-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-signing-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-test-kit-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-testing-base-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-testing-junit-platform-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-testing-jvm-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-testing-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-tooling-api-builders-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-tooling-native-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-version-control-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/gradle-workers-5.5.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.5.1-bin/cfsov38hb3r1zj4ic9bbjcc7n/gradle-5.5.1/lib/plugins/ivy-2.3.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -66,31 +496,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="duke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="duke" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="duke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="duke" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="duke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="duke" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567222310775" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567224518183" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -106,7 +542,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.duke [run]">
     <configuration name="Duke" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Duke" />
       <module name="main" />
@@ -114,8 +550,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="duke [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Duke" />
+      <item itemvalue="Gradle.duke [run]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.duke [run]" />
         <item itemvalue="Application.Duke" />
       </list>
     </recent_temporary>
@@ -131,43 +590,56 @@
       <option name="presentableId" value="Default" />
       <updated>1567221979734</updated>
       <workItem from="1567221981147" duration="330000" />
+      <workItem from="1567224289387" duration="260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330000" />
+    <option name="totallyTimeSpent" value="622000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1478" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25704226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32931727" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Build" weight="0.32931727" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Gradle" visible="true" weight="0.32957748" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +653,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
