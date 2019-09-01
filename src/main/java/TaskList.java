@@ -19,70 +19,67 @@ public class TaskList implements Serializable {
      * @param move is passed by user thru UI
      * @return true if move was successful else false
      */
-    public boolean action(String move) {
+    public String action(String move) {
         Parser current = new Parser(move);
         try {
             if (current.getType().equals("list")) {
-                Ui.printList(todos);
+                return Ui.printList(todos);
             } else if (current.getType().equals("find")) {
-                Ui.findTasks(todos, current.getTaskName());
+                return Ui.findTasks(todos, current.getTaskName());
             } else if (current.getType().equals("done")) {
-                completeTask(current.getTaskNo());
+                return completeTask(current.getTaskNo());
             } else if (current.getType().equals("delete")) {
-                deleteTask(current.getTaskNo());
+                return deleteTask(current.getTaskNo());
             } else {
-                addTask(current);
+                return addTask(current);
             }
-            return true;
         } catch (DukeException de) {
-            Ui.printError(de);
-            return false;
+            return Ui.printError(de);
         } catch (DateTimeParseException dtpe) {
-            System.out.println(dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting");
-            return false;
+            return (dtpe.getMessage() + "\nUse dd/MM/yyyy HHmm formatting");
         }
     }
 
-    private void addTask(Parser parser) throws DukeException {
+    private String addTask(Parser parser) throws DukeException {
         Task current;
         if (parser.getType().equals("todo")) {
             if (parser.getDescription().equals("")) {
-                throw new DukeException("☹ OOPS!!! The description of a todo cannot be empty.");
+                throw new DukeException("OOPS!!! The description of a todo cannot be empty.");
             }
             current = new ToDo(parser.getDescription());
         } else if (parser.getType().equals("deadline")) {
             if (parser.remainingArgs.equals("")) {
-                throw new DukeException("☹ OOPS!!! The description of a deadline cannot be empty.");
+                throw new DukeException("OOPS!!! The description of a deadline cannot be empty.");
             }
             current = new Deadline(parser.getDeadlineDescription(), parser.getDeadlineDate());
         } else if (parser.getType().equals("event")) {
             if (parser.remainingArgs.equals("")) {
-                throw new DukeException("☹ OOPS!!! The description of a event cannot be empty.");
+                throw new DukeException("OOPS!!! The description of a event cannot be empty.");
             }
             current = new Event(parser.getEventDescription(), parser.getEventDate());
         } else {
-            throw new DukeException("☹ OOPS!!! I'm sorry, but I don't know what that means :-(");
+            throw new DukeException("OOPS!!! I'm sorry, but I don't know what that means :-(");
         }
         todos.add(current);
-        System.out.println("Got it. I've added this task: \n" + current
+        return ("Got it. I've added this task: \n" + current
                 + "\nNow you have " + todos.size() + " tasks in the list.");
     }
 
-    private void completeTask(int taskNo) throws DukeException {
+    private String completeTask(int taskNo) throws DukeException {
         try {
             Task current = todos.get(taskNo);
             current.markAsDone();
-            Ui.completedTask(current);
+            return Ui.completedTask(current);
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException("Please give correct task number");
         }
     }
 
-    private void deleteTask(int taskNo) throws DukeException {
+    private String deleteTask(int taskNo) throws DukeException {
         try {
             Task current = todos.get(taskNo);
             todos.remove(current);
-            Ui.deletedTask(current, todos);
+            return Ui.deletedTask(current, todos);
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException("Please give correct task number");
         }

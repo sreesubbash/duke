@@ -82,7 +82,7 @@ public class Parser {
     private void parseArgsWithDate(String delimitter) throws DukeException {
         argsWithDate = new LinkedList<>(Arrays.asList(remainingArgs.split(delimitter)));
         if (argsWithDate.size() != 2) {
-            throw new DukeException("☹ OOPS!!! Set date after" + delimitter);
+            throw new DukeException("OOPS!!! Set date after" + delimitter);
         }
     }
 
