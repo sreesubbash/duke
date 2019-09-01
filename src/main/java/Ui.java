@@ -17,35 +17,15 @@ public class Ui {
         System.out.println("Hello! I'm Duke \nWhat can I do for you?");
     }
 
-    /**
-     * Serves user while waiting for input.
-     *
-     * @param taskList on which user can have his actions on
-     */
-    public static void serve(TaskList taskList) {
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()) {
-            String move = scanner.nextLine();
-            if (move.equals("bye")) {
-                System.out.println("Bye. Hope to see you again soon!");
-                break;
-            }
-            taskList.action(move);
-            try {
-                Storage.save(taskList);
-            } catch (IOException e) {
-                System.out.println(e);
-            }
-        }
-    }
+
 
     /**
      * Prints errors raised due to wrong input.
      *
      * @param de DukeException to be printed
      */
-    public static void printError(DukeException de) {
-        System.out.println(de.getMessage());
+    public static String printError(DukeException de) {
+        return (de.getMessage());
     }
 
     /**
@@ -53,8 +33,8 @@ public class Ui {
      *
      * @param t task which was completed
      */
-    public static void completedTask(Task t) {
-        System.out.println("Nice! I've marked this task as done: \n" + t);
+    public static String completedTask(Task t) {
+        return ("Nice! I've marked this task as done: \n" + t);
     }
 
     /**
@@ -63,8 +43,8 @@ public class Ui {
      * @param t task which was deleted
      * @param todos remaining list used to calculate tasks left
      */
-    public static void deletedTask(Task t, List<Task> todos) {
-        System.out.println("Noted. I've removed this task: \n" + t
+    public static String deletedTask(Task t, List<Task> todos) {
+        return ("Noted. I've removed this task: \n" + t
                 + "\nNow you have " + todos.size() + " tasks in the list.");
     }
 
@@ -73,11 +53,12 @@ public class Ui {
      *
      * @param todos list with all the tasks
      */
-    public static void printList(List<Task> todos) {
-        System.out.println("Here are the tasks in your list:");
+    public static String printList(List<Task> todos) {
+        String out = "Here are the tasks in your list:";
         for (int i = 0; i < todos.size(); i++) {
-            System.out.println((i + 1) + ". " + todos.get(i));
+             out += "\n" + ((i + 1) + ". " + todos.get(i));
         }
+        return out;
     }
 
     /**
@@ -86,13 +67,14 @@ public class Ui {
      * @param todos list with all the tasks
      * @param name being queried
      */
-    public static void findTasks(List<Task> todos, String name) {
-        System.out.println("Here are the matching tasks in your list:");
+    public static String findTasks(List<Task> todos, String name) {
+        String out = "Here are the matching tasks in your list:";
         for (int i = 0; i < todos.size(); i++) {
             Task curr = todos.get(i);
             if (curr.getDescription().contains(name)) {
-                System.out.println((i + 1) + ". " + curr);
+                out += "\n" + ((i + 1) + ". " + curr);
             }
         }
+        return out;
     }
 }
