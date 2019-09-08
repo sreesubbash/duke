@@ -61,6 +61,7 @@ public class TaskList implements Serializable {
             throw new DukeException("OOPS!!! I'm sorry, but I don't know what that means :-(");
         }
         todos.add(current);
+        assert todos.size() != 0;
         return ("Got it. I've added this task: \n" + current
                 + "\nNow you have " + todos.size() + " tasks in the list.");
     }
