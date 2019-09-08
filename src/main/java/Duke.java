@@ -26,21 +26,6 @@ public class Duke  {
         }
     }
 
-
-    /**
-     * Serves user while waiting for input.
-     *
-     * @param taskList on which user can have his actions on
-     */
-    public static void serve(TaskList taskList) {
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()) {
-            String move = scanner.nextLine();
-
-        }
-    }
-
-
     /**
      * You should have your own function to generate a response to user input.
      * Replace this stub with your completed method.
