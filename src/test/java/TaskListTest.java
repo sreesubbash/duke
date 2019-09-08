@@ -8,6 +8,6 @@ public class TaskListTest {
     @Test
     public void deleteWrongTask() {
         TaskList taskList = new TaskList();
-        assertEquals(false, taskList.action("delete 1"));
+        assertEquals("Please give correct task number", taskList.action("delete 1"));
     }
 }

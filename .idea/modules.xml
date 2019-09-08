@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/duke.iml" filepath="$PROJECT_DIR$/.idea/modules/duke.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/duke_main.iml" filepath="$PROJECT_DIR$/.idea/modules/duke_main.iml" group="duke" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/duke_test.iml" filepath="$PROJECT_DIR$/.idea/modules/duke_test.iml" group="duke" />
       <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/test/test.iml" filepath="$PROJECT_DIR$/src/test/test.iml" />
     </modules>
   </component>
 </project>
