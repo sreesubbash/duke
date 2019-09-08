@@ -1,9 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.Serializable;
 import java.time.format.DateTimeParseException;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class TaskList implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -30,6 +28,8 @@ public class TaskList implements Serializable {
                 return completeTask(current.getTaskNo());
             } else if (current.getType().equals("delete")) {
                 return deleteTask(current.getTaskNo());
+            } else if (current.getType().equals("duplicates")) {
+                return resolveDuplicates();
             } else {
                 return addTask(current);
             }
@@ -84,6 +84,32 @@ public class TaskList implements Serializable {
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException("Please give correct task number");
         }
+    }
+
+    private String resolveDuplicates() {
+        String out = "Here are the possible duplicates:";
+        HashMap<String, List<Integer>> helper = new HashMap<>();
+        for (int i = 0; i < todos.size(); i++) {
+            Task curr = todos.get(i);
+            if (helper.containsKey(curr.getDescription())) {
+                helper.get(curr.getDescription()).add(i);
+            } else {
+                List<Integer> temp = new LinkedList<>();
+                temp.add(i);
+                helper.put(curr.getDescription(), temp);
+            }
+        }
+        for (Map.Entry<String, List<Integer>> entry : helper.entrySet()) {
+            String key = entry.getKey();
+            List<Integer> value = entry.getValue();
+            if (value.size() > 1) {
+                for (int i : value) {
+                    out += "\n" + ((i + 1) + ". " + todos.get(i));
+                }
+
+            }
+        }
+        return out;
     }
 
 
