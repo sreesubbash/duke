@@ -4,7 +4,7 @@
 ### Your personal assistant
 Welcome to Duke! Here you can save todos, events and deadlines.
 
-![Image of Duke](Ui.PNG)
+![Image of Duke](Ui.png)
 
 ## Features 
 
